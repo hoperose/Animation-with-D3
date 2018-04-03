@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My D3 Animation</title>
+            <meta charset="utf-8">
+            <script src="http://d3js.org/d3.v4.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <style>
+    
+        body {
+            font: 15px sans-serif;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        
+        .label { fill: #999; }
+        
+        div.tooltip {
+            position: absolute;
+            width: 200px;
+            height: 28px;
+            font: 12px sans-serif;
+            pointer-events: none;
+        }
+    </style>
+    <body>
+        <svg></svg>
+        <p id="status">Year: 2012</p>
+        <button id="nextButton">Next</button>
+    </body>
+    <script src="app.js"></script>
+</html>
